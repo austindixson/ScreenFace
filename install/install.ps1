@@ -1,11 +1,11 @@
 # ScreenFace one-liner installer for Windows (PowerShell)
-# Usage: irm https://raw.githubusercontent.com/RuneweaverStudios/ScreenFace/main/install/install.ps1 | iex
-# Or:    irm https://raw.githubusercontent.com/RuneweaverStudios/ScreenFace/main/install/install.ps1 | iex -ArgumentList "v1.0.0"
+# Usage: irm https://raw.githubusercontent.com/austindixson/ScreenFace/main/install/install.ps1 | iex
+# Or:    irm https://raw.githubusercontent.com/austindixson/ScreenFace/main/install/install.ps1 | iex -ArgumentList "v1.0.0"
 
 param([string]$Version = "latest")
 
 $ErrorActionPreference = "Stop"
-$repo = if ($env:GITHUB_REPO) { $env:GITHUB_REPO } else { "RuneweaverStudios/ScreenFace" }
+$repo = if ($env:GITHUB_REPO) { $env:GITHUB_REPO } else { "austindixson/ScreenFace" }
 $api = "https://api.github.com/repos/$repo/releases"
 if ($Version -eq "latest") {
   $release = Invoke-RestMethod -Uri "$api/latest" -Method Get

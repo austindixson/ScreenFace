@@ -29,7 +29,7 @@ ScreenFace is an Electron desktop app that records your screen and/or a selected
 
 ### Install wizard (recommended)
 
-1. Go to [Releases](https://github.com/RuneweaverStudios/ScreenFace/releases).
+1. Go to [Releases](https://github.com/austindixson/ScreenFace/releases).
 2. Download the installer for your OS:
    - **macOS**: `ScreenFace-x.x.x.dmg` → open and drag to **Applications**.
    - **Windows**: `ScreenFace Setup x.x.x.exe` → run and follow the wizard (license, install path, shortcuts).
@@ -39,18 +39,18 @@ Detailed steps (permissions, first run): **[docs/INSTALL.md](docs/INSTALL.md)**.
 
 ### One-liner installers
 
-Replace `RuneweaverStudios/ScreenFace` with your actual GitHub repo (e.g. `myorg/ScreenFace`). Requires at least one published release with a `.dmg` (Mac) or `.exe` (Windows).
+Replace `austindixson/ScreenFace` with your actual GitHub repo (e.g. `myorg/ScreenFace`). Requires at least one published release with a `.dmg` (Mac) or `.exe` (Windows).
 
 **macOS:**
 
 ```bash
-curl -fsSL https://raw.githubusercontent.com/RuneweaverStudios/ScreenFace/main/install/install.sh | bash
+curl -fsSL https://raw.githubusercontent.com/austindixson/ScreenFace/main/install/install.sh | bash
 ```
 
 **Windows (PowerShell):**
 
 ```powershell
-irm https://raw.githubusercontent.com/RuneweaverStudios/ScreenFace/main/install/install.ps1 | iex
+irm https://raw.githubusercontent.com/austindixson/ScreenFace/main/install/install.ps1 | iex
 ```
 
 See **[docs/INSTALL.md](docs/INSTALL.md)** for versioned installs and options.
@@ -78,7 +78,7 @@ Preview position: **Ctrl+Shift+1 / 2 / 3** — Facecam position: **Ctrl+Alt+1 / 
 **Requirements:** Node.js 18+, npm.
 
 ```bash
-git clone https://github.com/RuneweaverStudios/ScreenFace.git
+git clone https://github.com/austindixson/ScreenFace.git
 cd ScreenFace
 npm install
 npm start          # run in development
@@ -96,7 +96,7 @@ Installers are produced in `dist/`. To publish a release, upload the `.dmg` and 
 1. **Create a new repo** on GitHub (e.g. `ScreenFace`), leave it empty (no README/license).
 2. **Set repository description** (optional): use the line in [.github/DESCRIPTION.txt](.github/DESCRIPTION.txt):  
    *Screen recording app with smart window switching, optional facecam, and MP4/WebM export. Install wizard + one-liner install for Mac & Windows.*
-3. **Replace placeholder** in this repo: replace `RuneweaverStudios/ScreenFace` in:
+3. **Replace placeholder** in this repo: replace `austindixson/ScreenFace` in:
    - `README.md` (this file)
    - `docs/INSTALL.md`
    - `install/install.sh`
@@ -109,7 +109,7 @@ Installers are produced in `dist/`. To publish a release, upload the `.dmg` and 
    git init
    git add .
    git commit -m "Initial commit: ScreenFace with install wizard and one-liner installers"
-   git remote add origin https://github.com/RuneweaverStudios/ScreenFace.git
+   git remote add origin https://github.com/austindixson/ScreenFace.git
    git branch -M main
    git push -u origin main
    ```

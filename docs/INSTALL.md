@@ -14,7 +14,7 @@ This guide covers installing ScreenFace on **macOS** and **Windows** using the i
 
 ## Option 1: Install wizard (recommended)
 
-Download the installer for your OS from [Releases](https://github.com/RuneweaverStudios/ScreenFace/releases) and run it.
+Download the installer for your OS from [Releases](https://github.com/austindixson/ScreenFace/releases) and run it.
 
 ### macOS
 
@@ -39,18 +39,18 @@ Download the installer for your OS from [Releases](https://github.com/Runeweaver
 
 ## Option 2: One-liner installers
 
-Use these after you have published at least one release (with a `.dmg` on macOS or `.exe` on Windows) and have set `GITHUB_REPO` or replaced `RuneweaverStudios/ScreenFace` in the script with your actual repo (e.g. `myorg/ScreenFace`).
+Use these after you have published at least one release (with a `.dmg` on macOS or `.exe` on Windows) and have set `GITHUB_REPO` or replaced `austindixson/ScreenFace` in the script with your actual repo (e.g. `myorg/ScreenFace`).
 
 ### macOS (Terminal)
 
 ```bash
-curl -fsSL https://raw.githubusercontent.com/RuneweaverStudios/ScreenFace/main/install/install.sh | bash
+curl -fsSL https://raw.githubusercontent.com/austindixson/ScreenFace/main/install/install.sh | bash
 ```
 
 Install a specific version:
 
 ```bash
-curl -fsSL https://raw.githubusercontent.com/RuneweaverStudios/ScreenFace/main/install/install.sh | bash -s -- v1.0.0
+curl -fsSL https://raw.githubusercontent.com/austindixson/ScreenFace/main/install/install.sh | bash -s -- v1.0.0
 ```
 
 This downloads the latest (or specified) release DMG, mounts it, copies ScreenFace to `/Applications`, and cleans up.
@@ -60,13 +60,13 @@ This downloads the latest (or specified) release DMG, mounts it, copies ScreenFa
 Run PowerShell as needed (e.g. “Run as Administrator” not required for user install):
 
 ```powershell
-irm https://raw.githubusercontent.com/RuneweaverStudios/ScreenFace/main/install/install.ps1 | iex
+irm https://raw.githubusercontent.com/austindixson/ScreenFace/main/install/install.ps1 | iex
 ```
 
 Install a specific version:
 
 ```powershell
-irm https://raw.githubusercontent.com/RuneweaverStudios/ScreenFace/main/install/install.ps1 | iex -ArgumentList "v1.0.0"
+irm https://raw.githubusercontent.com/austindixson/ScreenFace/main/install/install.ps1 | iex -ArgumentList "v1.0.0"
 ```
 
 This downloads the latest (or specified) Windows installer and runs it; follow the on-screen wizard.
@@ -78,7 +78,7 @@ This downloads the latest (or specified) Windows installer and runs it; follow t
 To produce the same installers locally:
 
 ```bash
-git clone https://github.com/RuneweaverStudios/ScreenFace.git
+git clone https://github.com/austindixson/ScreenFace.git
 cd ScreenFace
 npm install
 npm run build:mac    # → dist/*.dmg (macOS)
