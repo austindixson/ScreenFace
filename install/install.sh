@@ -1,10 +1,10 @@
 #!/usr/bin/env bash
 # ScreenFace one-liner installer for macOS
-# Usage: curl -fsSL https://raw.githubusercontent.com/RuneweaverStudios/ScreenFace/main/install/install.sh | bash
-# Or:    curl -fsSL https://raw.githubusercontent.com/RuneweaverStudios/ScreenFace/main/install/install.sh | bash -s -- v1.0.0
+# Usage: curl -fsSL https://raw.githubusercontent.com/austindixson/ScreenFace/main/install/install.sh | bash
+# Or:    curl -fsSL https://raw.githubusercontent.com/austindixson/ScreenFace/main/install/install.sh | bash -s -- v1.0.0
 
 set -e
-GITHUB_REPO="${GITHUB_REPO:-RuneweaverStudios/ScreenFace}"
+GITHUB_REPO="${GITHUB_REPO:-austindixson/ScreenFace}"
 VERSION="${1:-latest}"
 API_URL="https://api.github.com/repos/${GITHUB_REPO}/releases"
 if [ "$VERSION" = "latest" ]; then
